@@ -33,7 +33,7 @@ class Task:
             if not settled:
                 self.visualize()
                 self.solution = len([v for k, v in self.grid.items() if
-                                     v in ['|', '~'] and k[1] >= self.min_y])
+                                     v in ['~', '|'] and k[1] >= self.min_y])
 
     def settle_water(self, p):
         settled = False
